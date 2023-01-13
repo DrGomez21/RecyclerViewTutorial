@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageViewSuperHero"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            tools:background="#000"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/textViewSuperHeroName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Hola"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageViewSuperHero"/>
+
+        <TextView
+            android:id="@+id/textViewRealName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Real Name"
+            android:layout_marginStart="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/textViewSuperHeroName"
+            app:layout_constraintStart_toEndOf="@+id/imageViewSuperHero"/>
+
+        <TextView
+            android:id="@+id/textViewPublisher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Real Name"
+            android:layout_marginStart="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/textViewRealName"
+            app:layout_constraintStart_toEndOf="@+id/imageViewSuperHero"/>
+
+        <Button
+            android:id="@+id/buttonDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imageViewSuperHero"
+            android:text="Borrar"
+            android:textAllCaps="false"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
